@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creador de Tarjetas de Felicitación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Crea tu tarjeta de Felicitación</h1>
+  </header>
+
+  <div class="container">
+    <section id="output">
+      <div id="cardPreview">
+        <div id="selectedFrame">
+          <img src="" alt="Imagen Seleccionada" id="selectedImage">
+          <div id="textOverlay">
+            <h2 id="previewTitle"></h2>
+            <p id="previewMessage"></p>
+            <p id="previewName"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="step">
+        <label for="theme">Seleccciona un tema:</label>
+        <select id="theme">
+          <option value="valentine">San Valentín</option>
+          <option value="birthday">Cumpleaños</option>
+          <option value="anniversary">Aniversario</option>
+        </select>
+      </div>
+
+      <div class="step">
+        <label for="bgColor">Color de Fondo:</label>
+        <input type="color" id="bgColor" value="#f3e5f5">
+      </div>
+
+      <div class="step">
+        <label>Elige un Marco:</label>
+        <div class="frames-options">
+          <div class="frame" id="frame1">Marco 1</div>
+          <div class="frame" id="frame2">Marco 2</div>
+          <div class="frame" id="frame3">Marco 3</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <label> toma una iamgen:</label>
+        <div class="image-options">
+          <!-- Las imágenes se cargarán dinámicamente aquí -->
+        </div>
+      </div>
+
+      <div class="step">
+        <label for="name">Datos:</label>
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="text" id="title" placeholder="Titulo">
+        <textarea id="message" rows="4" placeholder="Mensaje"></textarea>
+      </div>
+
+      <button id="generate">Generar</button>
+    </section>
+  </div>
+
+  <script src="funciones.js"></script>
+</body>
+</html>

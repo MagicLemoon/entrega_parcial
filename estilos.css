@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e8eaf6;
+  text-align: center;
+}
+
+header {
+  background-color: #387326;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.controls {
+  flex: 2;
+  padding: 20px;
+  background-color: #ede7f6;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.frames-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.frame {
+  border: 2px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.frame.selected {
+  border-color: #98cca8;
+}
+
+.image-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.image-options img {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.image-options img.selected {
+  border: 3px solid #8cb25b;
+}
+
+#output {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#cardPreview {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 2px solid #7aaf57;
+}
+
+#selectedFrame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#selectedImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#previewTitle {
+  font-size: 24px;
+  margin: 0;
+}
+
+#previewMessage {
+  font-size: 18px;
+}
+
+#previewName {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #69b335;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
